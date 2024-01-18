@@ -1,4 +1,4 @@
-import type { FeatureProps, MainCardProps, TierProps, FaqProps, DonatorProps } from "@/types/index.ts";
+import type { FeatureProps, MainCardProps, TierProps, FaqProps, DonatorProps, ProgressProps } from "@/types/index.ts";
 import { tierOneLink, tierTwoLink, tierThreeLink } from "./links.ts";
 
 /* Cards data */
