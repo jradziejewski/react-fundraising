@@ -1,7 +1,8 @@
 import { Button } from "./ui/button";
 import { Card, CardContent, CardDescription, CardTitle } from "./ui/card";
+import type {TierProps} from "@/types";
 
-export function TierCard({ featured, name, contributionRange, perks, link }) {
+export function TierCard({ featured, name, contributionRange, perks, link }: TierProps) {
   return (
     <Card
       className={`basis-full p-4 hover:border-primary ${

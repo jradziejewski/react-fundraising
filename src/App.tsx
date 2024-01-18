@@ -4,8 +4,9 @@ import { MainCard } from "./components/MainCard";
 import { ProgressCard } from "./components/ProgressCard";
 import { TierCard } from "./components/TierCard";
 import { tierOneLink, tierThreeLink, tierTwoLink } from "./utils/links";
+import { TierProps } from "./types";
 
-const tiers = [
+const tiers: Array<TierProps> = [
   {
     name: "Change Enthusiast",
     contributionRange: "$25.00 - $49.99",

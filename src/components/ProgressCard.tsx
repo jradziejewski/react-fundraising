@@ -11,10 +11,9 @@ import {
 import { Donator } from "./Donator";
 import { ShareDialog } from "./Share";
 import { generalLink } from "../utils/links";
+import { DonatorProps } from "@/types";
 
-type CardProps = React.ComponentProps<typeof Card>;
-
-const donators = [
+const donators: Array<DonatorProps> = [
   { name: "Emily Thompson", amount: 50.0, howLongAgo: "1 minute ago" },
   { name: "Alex Rodriguez", amount: 100.0, howLongAgo: "3 minutes ago" },
   { name: "Sarah Johnson", amount: 25.0, howLongAgo: "5 minutes ago" },
@@ -22,7 +21,7 @@ const donators = [
   { name: "Emma Davis", amount: 200.0, howLongAgo: "1 hour ago" },
 ];
 
-export function ProgressCard(props: CardProps) {
+export function ProgressCard() {
   return (
     <Card className="flex flex-col justify-around w-full lg:h-[640px]">
       <CardHeader>

@@ -1,11 +1,6 @@
 import { HeartHandshake } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
-
-type DonatorProps = {
-  name: string;
-  amount: string;
-  howLongAgo: string;
-};
+import type { DonatorProps } from "@/types";
 
 export function Donator({name, amount, howLongAgo}: DonatorProps) {
   return (

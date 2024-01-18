@@ -29,9 +29,7 @@ const features = [
   },
 ];
 
-type CardProps = React.ComponentProps<typeof Card>;
-
-export function MainCard(props: CardProps) {
+export function MainCard() {
   return (
     <Card className="flex flex-col justify-around w-full lg:h-[640px]">
       {" "}
