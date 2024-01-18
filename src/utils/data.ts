@@ -18,7 +18,7 @@ export const donators: Array<DonatorProps> = [
 
 export const mainCardInfo: MainCardProps = {
   title: "ChangeMakers Fund",
-  author: "John Doe",
+  author: "@JohnDoe",
   howLongAgo: "2 days ago",
   description:
     "ChangeMakers Fund is a dynamic initiative where your support fuels impactful projects, ranging from hiring talented personnel to launching compelling ad campaigns and implementing innovative features. Every donation brings us closer to creating positive change. Be a part of the change, be a ChangeMaker!",
