@@ -5,6 +5,8 @@ import { ProgressCard } from "./components/ProgressCard";
 import { TierCard } from "./components/TierCard";
 import { tierOneLink, tierThreeLink, tierTwoLink } from "./utils/links";
 import { TierProps } from "./types";
+import { FaqSection } from "./components/FaqSection";
+import { Toaster } from "./components/ui/toaster";
 
 const tiers: Array<TierProps> = [
   {
@@ -67,11 +69,21 @@ function App() {
           </span>
           <div className="flex-grow border-t"></div>
         </div>
-        <div className="flex flex-col lg:flex-row gap-4 justify-around pb-8">
+        <div className="flex flex-col lg:flex-row gap-4 justify-around ">
           {tiers.map((tier) => (
             <TierCard {...tier} />
           ))}
         </div>
+
+        <div className="relative flex pt-16 pb-8 items-center">
+          <div className="flex-grow border-t"></div>
+          <span className="flex-shrink mx-4 text-4xl font-semibold">FAQ</span>
+          <div className="flex-grow border-t"></div>
+        </div>
+        <div className="pb-6">
+          <FaqSection />
+        </div>
+        <Toaster />
       </div>
     </ThemeProvider>
   );
