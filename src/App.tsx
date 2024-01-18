@@ -3,46 +3,9 @@ import { ThemeToggler } from "./components/ThemeToggler";
 import { MainCard } from "./components/MainCard";
 import { ProgressCard } from "./components/ProgressCard";
 import { TierCard } from "./components/TierCard";
-import { tierOneLink, tierThreeLink, tierTwoLink } from "./utils/links";
-import { TierProps } from "./types";
 import { FaqSection } from "./components/FaqSection";
 import { Toaster } from "./components/ui/toaster";
-
-const tiers: Array<TierProps> = [
-  {
-    name: "Change Enthusiast",
-    contributionRange: "$25.00 - $49.99",
-    description:
-      "Embrace the role of a Change Enthusiast! Your support fuels the momentum for positive initiatives. As a token of our gratitude, you'll receive:",
-    perks: ["Exclusive project updates", "Personalized thank-you email"],
-    link: tierOneLink,
-  },
-  {
-    featured: true,
-    name: "Impact Insider",
-    contributionRange: "$50.00 - $99.99",
-    description:
-      "Step into the inner circle as an Impact Insider! Your generosity amplifies our ability to make a real impact. Enjoy all the perks of Tier 1, plus:",
-    perks: [
-      "Early access to project milestones",
-      "Digital certificate of appreciation",
-      "Name featured on our website's donor wall",
-    ],
-    link: tierTwoLink,
-  },
-  {
-    name: "Visionary Catalyst",
-    contributionRange: "$100.00 and above",
-    description:
-      "Become a Visionary Catalyst, steering change with a powerful impact! In addition to Tier 1 and Tier 2 rewards, you'll receive:",
-    perks: [
-      "Exclusive ChangeMakers Fund merchandise pack",
-      "Priority access to beta releases",
-      "Invitation to a virtual meet-and-greet with our team",
-    ],
-    link: tierThreeLink,
-  },
-];
+import {tiers, progressInfo, mainCardInfo} from "./utils/data";
 
 function App() {
   return (
@@ -56,10 +19,10 @@ function App() {
         </div>
         <div className="lg:grid grid-cols-5 divide-y-2 lg:divide-none">
           <div className="col-span-3 p-4">
-            <MainCard />
+            <MainCard {...mainCardInfo}/>
           </div>
           <div className="col-span-2 p-4">
-            <ProgressCard />
+            <ProgressCard {...progressInfo}/>
           </div>
         </div>
         <div className="relative flex py-16 items-center">

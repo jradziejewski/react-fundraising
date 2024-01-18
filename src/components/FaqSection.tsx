@@ -5,34 +5,7 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "./ui/accordion";
-
-const faqs = [
-  {
-    question: "How can I donate to the ChangeMakers Fund?",
-    answer:
-      "Donating is easy! Simply visit our donation section, enter your desired amount, and complete the secure transaction using Stripe checkout.",
-  },
-  {
-    question: "Is my donation tax-deductible?",
-    answer:
-      "Yes, all donations made to the ChangeMakers Fund are tax-deductible. You will receive a confirmation email with the necessary details for tax purposes.",
-  },
-  {
-    question: "Can I choose which project my donation goes to?",
-    answer:
-      "Absolutely! During the donation process, you can specify if you have a preference for a particular project. Your contribution will be allocated accordingly.",
-  },
-  {
-    question: "How often are project updates provided?",
-    answer:
-      "We strive to keep our supporters informed. Project updates are typically shared monthly, providing insights into milestones achieved, challenges faced, and the impact of your donations.",
-  },
-  {
-    question: "Are there any additional fees for online transactions?",
-    answer:
-      "No, we cover all transaction fees associated with online donations. 100% of your intended contribution goes directly to supporting the ChangeMakers Fund initiatives.",
-  },
-];
+import { faqs } from "@/utils/data";
 
 export function FaqSection() {
   return (
